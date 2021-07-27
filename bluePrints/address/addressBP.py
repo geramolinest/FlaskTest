@@ -19,7 +19,10 @@ def index():
         #Obtaining the data from the class function for print in the html file
         data_table = response_address.generate_data_template()
         #Obtaining the number of records of each petition for print in html template
-        address_registers = response_address.founded_registers()
+        address_registers = response_address.founded_registers()       
+        #Validate that we have data for show
+        if int(address_registers) == 0:
+            return render_template('fail.html')
         mkad_registers = response_address.founded_registers_mkad()
         
         #Redirect to result template, in this html we can see the results
