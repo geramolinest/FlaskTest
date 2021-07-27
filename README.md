@@ -25,6 +25,7 @@ Finding the distance from the Moscow Ring Road to the specified address. The add
 - Flask
 - HTML
 - CSS
+- Yandex Geocode API
 
 
 [Back To The Top](#read-me-template)
