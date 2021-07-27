@@ -1,0 +1,104 @@
+body{
+    background-image: url(/static/assets/back-ground2.jpg);
+    background-size: cover;
+    background-position:initial;
+    display: block;
+    overflow-x: hidden;
+}
+
+nav{
+    background-color: white;
+    height: 60px;    
+}
+.nav-item{
+    font-size: 12px;
+    color: rgb(95, 94, 94);    
+}
+
+.navbar-brand{
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 950;
+    color: black;
+}
+
+nav ul li a{
+    color: rgb(92, 91, 91);
+    font-size: 22px;
+    margin: auto 10px;
+}
+nav ul li a:hover{
+    color: rgb(92, 91, 91);
+}    
+
+
+section{
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+section h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    color: black;
+    text-align: left;   
+}
+
+section p{    
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(92, 91, 91);
+}
+
+.chose{
+    margin-top: 15px;    
+}
+
+.btnAddress{
+    margin-top: 15px; 
+}
+
+#choseOption{
+    margin-top: 110px;
+}
+.icons{
+    width: 50px;
+    height: auto;
+}
+
+
+#btnForm{
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+#btnCard{
+    border-radius: 50px;
+    margin-top: 15px;
+}
+
+#formAdd{
+    margin-top: 3px;    
+    margin-left: auto;
+    margin-right: auto; 
+}
+#divForm{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textMKAD{
+    margin-top: 85px;
+    margin-left: 135px;
+    margin-right: auto;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 950;  
+    text-align: left;   
+}
+.dropdown{
+    margin-top: 65px;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename='css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Distance finder</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">    
+</head>
+<body>
+    <!-- Starts nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+         <span class="material-icons">
+            travel_explore
+         </span>
+          <a class="navbar-brand" href="{{url_for('index')}}">
+            
+            DistanceFinder</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{url_for('index')}}">Home</a>
+              </li>                                     
+            </ul>
+           
+           <div class="social">
+                <a href="https://www.linkedin.com/in/geramolest">
+                    <img src="/static/assets/linkedin.png" alt="">
+                </a>                
+                <span></span>
+                <a href="https://www.github.com/geramolinest">
+                    <img src="/static/assets/github.png" alt="">
+                </a>
+                <span></span>
+                <a href="https://www.instagram.com/geramolina">
+                  <img src="/static/assets/instagram.png" alt="">
+                </a>
+           </div>             
+          </div>
+        </div>
+      </nav>
+      <!-- end nav bar -->
+      
+      <!-- description section -->
+      <section id="description">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Distance<br> Finder</h1>                        
+                        <p>
+                          Finding the distance from the Moscow Ring Road to the specified address. The address is passed to the application in an HTTP request, 
+                          if the specified address is located inside the MKAD, the distance does not need to be calculated.
+                        </p>
+                    </div>
+                    <div class="col">
+                        <div class="d-grid gap-2" id="choseOption">
+                          <a href="{{ url_for('address.index') }}">
+                            <button class="btn btn-outline-dark" type="button" style="border-radius: 50px; width: 100%;">Calculate by address</button>
+                          </a> 
+                                                                          
+                        </div>                                                                              
+                    </div>     
+                </div>
+            </div>
+      </section>
+      <!-- end description section -->      
+</body>
+</html>

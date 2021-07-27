@@ -1,0 +1,74 @@
+body{
+    background-image: url(/static/assets/back-ground2.jpg);
+    background-size: cover;
+    background-position:initial;
+    display: block;
+    overflow-x: hidden;
+}
+
+nav{
+    background-color: white;
+    height: 60px;    
+}
+.nav-item{
+    font-size: 12px;
+    color: rgb(95, 94, 94);    
+}
+
+.navbar-brand{
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 950;
+    color: black;
+}
+
+nav ul li a{
+    color: rgb(92, 91, 91);
+    font-size: 22px;
+    margin: auto 10px;
+}
+nav ul li a:hover{
+    color: rgb(92, 91, 91);
+}    
+
+
+section{
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+section h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    color: black;
+    text-align: left;   
+}
+
+section p{    
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(92, 91, 91);
+}
+
+
+
+#divFormBtn{
+    margin-top: 35px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.error{
+    margin-top: 150px;
+}
+.error h1{
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 950;
+    color: black;
+}
+#btnCard{
+    width: 100%;
+    border-radius: 50px;
+}
